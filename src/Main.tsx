@@ -1,8 +1,11 @@
-import { Text, View } from "react-native"
+import { NavigationContainer } from "@react-navigation/native"
+import { BottomTabNavigator } from "./presentation/navigation/BottomTabNavigator"
 
 
 export const Main = () => {
   return (
-    <View><Text>Main</Text></View>
+    <NavigationContainer>
+      <BottomTabNavigator/>
+    </NavigationContainer>
   )
 }
